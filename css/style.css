@@ -39,7 +39,7 @@
         bottom: 0;
         width: 100%;
         background-color: var(--bg-darkgray);
-        height: 100px;
+        height: 100;
     }
 
     .container {
@@ -54,6 +54,10 @@
 
     .py-1 {
         padding: 1rem 0;
+    }
+
+    .py-3 {
+        padding: 3rem 0;
     }
 
     .p-rel {
@@ -73,13 +77,13 @@
 
 /* #region Header */
 
-    .options {
+    header .options {
         position: absolute;
         right: 50px;
         top: 10px;
     }
 
-    .card {
+    header .card {
         align-items: center;
         justify-content: center;
         background-color: var(--bg-lightgray);
@@ -90,11 +94,11 @@
         margin: 0 5px;
     }
 
-    .view {
+    header .view {
         width: 120px;
     }
 
-    .full-screen {
+    header .full-screen {
         aspect-ratio: 1;
     }
 
@@ -106,13 +110,13 @@
 
 /* #region Main */
 
-    .m-row {
+    main .m-row {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
     }
 
-    .card-name {
+    main .card-name {
         align-items: center;
         justify-content: center;
         background-color: var(--bg-name);
@@ -126,7 +130,7 @@
         bottom: 25px;
     }
 
-    .name {
+    main .name {
         padding-left: 5px;
     }
 
@@ -134,25 +138,51 @@
 
 /* #region Footer */
 
-.f-row {
+footer .f-row {
     align-items: center;
     color: var(--txt-primary);
+    font-size: 12px;
 }
 
-.f-col {
+footer .f-col {
     align-items: center;
-    width: calc(100% / 12*3);
+    width: calc(100% / 12*2);
 }
 
-.f-col.center {
+footer .f-col.center {
     justify-content: center;
-    width: calc(100% / 12*6);
+    width: calc(100% / 12*8);
 }
 
-.f-col.right {
+footer .f-col.right {
     justify-content: flex-end;
+    align-items: center;
 }
 
+footer .icon-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+}
+
+footer .icon {
+    font-size: 24px;
+    padding-bottom: 3px;
+}
+
+footer .icon-name {
+    font-size: 10px;
+}
+
+footer .end-meet {
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100px;
+    background-color: var(--bg-lightgray);
+    color: red;
+    font-weight: bold;
+}
 
 
 /* #endregion Main */
