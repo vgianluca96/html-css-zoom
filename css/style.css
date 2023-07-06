@@ -162,12 +162,12 @@ footer .f-col.right {
 footer .icon-card {
     flex-direction: column;
     align-items: center;
-    padding: 0 12px;
+    padding: 0 18px;
 }
 
 footer .icon {
     font-size: 24px;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
 }
 
 footer .icon-name {
@@ -182,6 +182,10 @@ footer .end-meet {
     background-color: var(--bg-lightgray);
     color: red;
     font-weight: bold;
+}
+
+footer .icon.share-screen {
+    color: green;
 }
 
 
