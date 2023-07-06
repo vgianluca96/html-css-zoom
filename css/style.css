@@ -1,0 +1,53 @@
+
+/* #region Common */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bg-primary: black;
+        --bg-darkgray: #222222;
+        --bg-lightgray: #4a4a4a;
+
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: var(--bg-primary);
+        height: 60px;
+    }
+
+    main {
+        overflow-y: auto;
+        background-color: orange;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--bg-darkgray);
+        height: 100px;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+    }
+
+/* #endregion Common */
+
+/* #region Debug */
+
+.debug2 {
+    background-color: orange;
+    height: 1000px;
+}
+
+/* #endregion Debug */
