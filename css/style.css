@@ -17,6 +17,7 @@
 
     body {
         min-width: 900px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
     header {
@@ -91,7 +92,6 @@
 
     .view {
         width: 120px;
-        
     }
 
     .full-screen {
@@ -106,7 +106,7 @@
 
 /* #region Main */
 
-    .row {
+    .m-row {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -129,5 +129,30 @@
     .name {
         padding-left: 5px;
     }
+
+/* #endregion Main */
+
+/* #region Footer */
+
+.f-row {
+    align-items: center;
+    color: var(--txt-primary);
+}
+
+.f-col {
+    align-items: center;
+    width: calc(100% / 12*3);
+}
+
+.f-col.center {
+    justify-content: center;
+    width: calc(100% / 12*6);
+}
+
+.f-col.right {
+    justify-content: flex-end;
+}
+
+
 
 /* #endregion Main */
