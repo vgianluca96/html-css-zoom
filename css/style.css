@@ -11,7 +11,11 @@
         --bg-primary: black;
         --bg-darkgray: #222222;
         --bg-lightgray: #4a4a4a;
+        --txt-primary: white;
+    }
 
+    body {
+        min-width: 900px;
     }
 
     header {
@@ -22,7 +26,7 @@
     }
 
     main {
-        overflow-y: auto;
+        overflow-y: scroll;
         background-color: orange;
     }
 
@@ -41,6 +45,14 @@
         margin: auto;
     }
 
+    .d-flex {
+        display: flex;
+    }
+
+    .py-1 {
+        padding: 1rem 0;
+    }
+
 /* #endregion Common */
 
 /* #region Debug */
@@ -51,3 +63,33 @@
 }
 
 /* #endregion Debug */
+
+/* #region Main */
+
+.row {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-pic {
+    position: relative;
+}
+
+.name {
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    width: 80px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 0 3px;
+    font-size: 12px;
+    color: var(--txt-primary);
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+}
+
+
+
+/* #endregion Main */
