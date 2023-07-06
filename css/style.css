@@ -28,7 +28,7 @@
     }
 
     main {
-        overflow-y: scroll;
+        overflow-y: auto;
         background-color: var(--bg-primary);
     }
 
@@ -55,6 +55,10 @@
         padding: 1rem 0;
     }
 
+    .p-rel {
+        position: relative;
+    }
+
 /* #endregion Common */
 
 /* #region Debug */
@@ -66,16 +70,46 @@
 
 /* #endregion Debug */
 
+/* #region Header */
+
+    .options {
+        position: absolute;
+        right: 50px;
+        top: 10px;
+    }
+
+    .card {
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-lightgray);
+        border-radius: 5px;
+        font-size: 12px;
+        color: var(--txt-primary);
+        height: 20px;
+        margin: 0 5px;
+    }
+
+    .view {
+        width: 120px;
+        
+    }
+
+    .full-screen {
+        aspect-ratio: 1;
+    }
+
+    header span {
+        margin-left: 5px;
+    }
+    
+/* #endregion Header */
+
 /* #region Main */
 
     .row {
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-    }
-
-    .card-user {
-        position: relative;
     }
 
     .card-name {
