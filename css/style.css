@@ -11,6 +11,7 @@
         --bg-primary: black;
         --bg-darkgray: #222222;
         --bg-lightgray: #4a4a4a;
+        --bg-name: rgba(0,0,0,0.7);
         --txt-primary: white;
     }
 
@@ -21,17 +22,18 @@
     header {
         position: sticky;
         top: 0;
+        z-index: 1;
         background-color: var(--bg-primary);
         height: 60px;
     }
 
     main {
         overflow-y: scroll;
-        background-color: orange;
+        background-color: var(--bg-primary);
     }
 
     footer {
-        position: fixed;
+        position: sticky;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -66,30 +68,32 @@
 
 /* #region Main */
 
-.row {
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+    .row {
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
-.container-pic {
-    position: relative;
-}
+    .card-user {
+        position: relative;
+    }
 
-.name {
-    align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    width: 80px;
-    height: 20px;
-    border-radius: 5px;
-    padding: 0 3px;
-    font-size: 12px;
-    color: var(--txt-primary);
-    position: absolute;
-    left: 0;
-    bottom: 25px;
-}
+    .card-name {
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-name);
+        width: 100px;
+        height: 20px;
+        border-radius: 5px;
+        font-size: 12px;
+        color: var(--txt-primary);
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+    }
 
-
+    .name {
+        padding-left: 5px;
+    }
 
 /* #endregion Main */
